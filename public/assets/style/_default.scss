@@ -1,0 +1,83 @@
+body {
+  background-color: $white3;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: $dark-blue;
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; // anti aliasing
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  @include transition-fast;
+
+  &:hover {
+    color: $red3;
+  }
+}
+
+ul {
+  @include list-reset;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: 'Caveat Brush', cursive; // font from logo
+}
+.text--red {
+  color: $red;
+}
+.text--dark-red {
+  color: $red3;
+}
+.text--light-red {
+  color: $red2;
+}
+.text--bold {
+  font-weight: bold;
+}
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content {
+  width: 100%;
+  padding: 10% 10% 5% 10%;
+  @media all and (max-width: $break-1){
+    padding: 10% 5% 5% 5%;
+  }
+
+  &--homepage {
+    padding-top: 0%;
+  }
+  &--contact {
+    padding: 10% 15% 5% 15%;
+    @media all and (max-width: $break-1){
+      padding: 10% 10% 5% 10%;
+    }
+  }
+  &--about {
+    padding: 10% 0 0 0;
+    background-color: $blue4;
+    color: $white3;
+  }
+  &--gallery {
+    padding: 10% 0 0 0;
+    background-color: $blue4;
+    color: $white3;
+  }
+}
+/*
+.letter {
+  @include transition-fast;
+  &:hover {
+    color: $red2;
+    font-size: 2em;
+  }
+}
+*/

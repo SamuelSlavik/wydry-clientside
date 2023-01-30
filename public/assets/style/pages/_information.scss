@@ -1,0 +1,125 @@
+.information-form {
+  width: 50%;
+  margin-left: 25%;
+  @media all and (max-width: $break-1){
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .input {
+    @include transition-fast;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid $blue2;
+    border-left: 3px solid $blue2;
+    border-right: 3px solid $blue2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    padding:  2% 3% 2% 3%;
+    margin-bottom: 5%;
+    font-size: 1em;
+    background-color: $white3 !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    @media all and (max-width: $break-1){
+      padding: 4% 3% 4% 3%;
+    }
+
+    &:hover {
+      border-color: $red3;
+    }
+    &:focus {
+      border-color: $red3;
+    }
+  }
+
+  .submit {
+    @include transition-fast;
+    outline: none;
+    border: none;
+    padding:  2% 3% 2% 3%;
+    background-color: $white3;
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-size: 1em;
+    border-bottom: 3px solid $blue2;
+    border-left: 3px solid $blue2;
+    border-right: 3px solid $blue2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 20%;
+    //margin-left: 80%;
+    text-align: center;
+    @media all and (max-width: $break-1){
+      width: 50%;
+      padding: 4% 3% 4% 3%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $red3;
+      border-color: $red3;
+    }
+  }
+  .submit-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+
+    p {
+      color: $red3;
+      font-weight: bold;
+    }
+  }
+}
+
+.information {
+  width: 100%;
+  margin-bottom: 10%;
+  @media all and (max-width: $break-1){
+    margin-bottom: 20%;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 5% 10% 0 10%;
+    @media all and (max-width: $break-1){
+      padding: 5% 5% 0 5%;
+    }
+  }
+  &__detail {
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+    color: $grey;
+    margin-top: 1%;
+    @media all and (max-width: $break-1){
+      display: block;
+    }
+
+    p {
+      margin-top: 0;
+      @media all and (max-width: $break-1){
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__content {
+    letter-spacing: 1px;
+    line-height: 1.8em;
+  }
+  &__due {
+    color: $red3;
+    font-weight: bold;
+  }
+}

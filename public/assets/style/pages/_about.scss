@@ -1,0 +1,130 @@
+.card {
+  width: 28%;
+  height: auto;
+  border-bottom-left-radius: 5%;
+  @media all and (max-width: $break-1){
+    width: 100%;
+  }
+
+  &--middle {
+    width: 40%;
+    @media all and (max-width: $break-1){
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  &__wrapper {
+    //border-top-right-radius: 50% 5%;
+    //border-top-left-radius: 10% 1%;
+    width: 100%;
+    display: flex;
+    background-color: $dark-blue;
+    justify-content: space-between;
+    padding: 2% 10% 2% 10%;
+    background: linear-gradient(to bottom, $blue4 0%, $blue4 60%, $white3 60%, $white3 100%);
+    @media all and (max-width: $break-1){
+      flex-wrap: wrap;
+      background: linear-gradient(to bottom, $blue4 0%, $blue4 20%, $white3 90%, $white3 100%);
+    }
+  }
+}
+
+.about {
+  padding: 0 20% 0 20%;
+  letter-spacing: 1px;
+  line-height: 1.8em;
+
+  &__first {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.4em;
+  }
+  &__second {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    @media all and (max-width: $break-1){
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  &__third {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    @media all and (max-width: $break-1){
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.benefits {
+  width: 100%;
+  height: auto;
+  background-color: $white3;
+  color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0 0 0 0;
+  @media all and (max-width: $break-1){
+    font-size: 1em;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: auto;
+    padding: 4% 15% 5% 15%;
+    background-color: $white3;
+    color: $dark-blue;
+    @media all and (max-width: $break-1){
+      padding: 4% 2% 4% 2%;
+    }
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      font-size: 3em;
+      margin-top: 0;
+      display: block;
+    }
+  }
+  &__horizontal-line {
+    width: 4px;
+    background-color: $blue2;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  &__left {
+    width: 45%;
+
+    div {
+      margin-bottom: 120px;
+      text-align: right;
+      border-bottom: solid $red3 3px;
+      border-left: solid $red3 3px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+  &__right {
+    width: 45%;
+
+    div {
+      margin-top: 120px;
+      border-bottom: solid $red3 3px;
+      border-right: solid $red3 3px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 0% 10% 5% 10%;
+  @media all and (max-width: $break-1){
+    padding: 0 5% 5% 5%;
+  }
+
+  h2 {
+    font-family: 'Caveat Brush', cursive;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    @media all and (max-width: $break-1){
+      font-size: 2.5em;
+    }
+  }
+}
+
+.quote {
+  width: 100%;
+  padding: 2% 20% 10% 20%;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Caveat Brush", cursive;
+  letter-spacing: 2px;
+  border-bottom-left-radius: 50% 4%;
+  border-bottom-right-radius: 50% 2%;
+  position: relative;
+  @media all and (max-width: $break-1){
+    font-size: 1.2em;
+    padding: 1% 5% 1% 5%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $blue2;
+    height: 300px;
+    width: 100%;
+    display: block;
+    left: 0;
+    top: -300px;
+    z-index: -1;
+  }
+
+  img {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid $blue2;
+    position: absolute;
+    bottom: -20%;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    @media all and (max-width: $break-1){
+      display: none;
+    }
+  }
+
+  &--dark {
+    background-color: $blue2;
+    color: $white;
+  }
+}
+
+.pick-up-line {
+  background-color: $blue2;
+  color: $white;
+  width: 100%;
+  padding: 5% 20% 5% 20%;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Caveat Brush", cursive;
+  letter-spacing: 2px;
+  border-top-left-radius: 50% 4%;
+  border-top-right-radius: 50% 30%;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 10%;
+  position: relative;
+
+  p {
+    display: block;
+  }
+}

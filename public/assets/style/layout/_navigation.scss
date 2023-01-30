@@ -1,0 +1,120 @@
+.navigation-wrapper {
+  position: relative;
+  top: 0;
+  display: block;
+  @media all and (max-width: $break-1){
+    display: none;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
+.navigation {
+  width: 100%;
+  padding:  2% 5% 0 5%;
+  color: $white;
+  background: $blue2;
+  //background: linear-gradient(0deg, $blue 0%, $dark-blue 100%);
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: right;
+  gap: 5%;
+  z-index: 3;
+  position: relative;
+
+  a {
+    @include transition-fast;
+    &:hover {
+      color: $red2;
+    }
+  }
+  .active {
+    color:  $red2;
+  }
+}
+.logo {
+  position: absolute;
+  width: 13%;
+  z-index: 500;
+  display: block;
+  top: 1.5%;
+  left: 14%;
+  @media all and (max-width: $break-1){
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    z-index: 4;
+    position: relative;
+    display: block;
+  }
+}
+
+///////////////////////////////////////////////////////////
+// RESPONSIVE NAVIGATION
+.navigation--responsive {
+  display: none;
+  color: $white;
+  background-color: $blue2;
+  width: 100%;
+  height: auto;
+  padding: 2% 8% 2% 8%;
+  position: relative;
+  z-index: 100;
+  @media all and (max-width: $break-1){
+    display: block;
+  }
+}
+.navigation--responsive a {
+  color: $white;
+  //width: max-content;
+  width: 100%;
+  display: block;
+  padding: 5%;
+  text-align: right;
+  font-size: 1.2em;
+}
+.navigation--responsive a:hover {
+  color: $red2;
+}
+.navigation-content--responsive ul li {
+  width: 100%;
+  padding: 5% 2% 5% 2%;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.navigation--responsive__top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.logo-wrapper--responsive {
+  width: 30%;
+  height: auto;
+}
+.logo--responsive {
+  width: 100%;
+  height: 100%;
+}
+.hamburger {
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+.cross {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none;
+  cursor: pointer;
+}
+.navigation-content--responsive {
+  display: none;
+}

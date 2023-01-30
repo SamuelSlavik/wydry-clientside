@@ -1,0 +1,27 @@
+@import "assets/style/helpers/variables";
+
+// Mixins
+@import "assets/style/mixins/transitions-mixin";
+@import "assets/style/mixins/lists-mixin";
+
+// Default style
+@import "assets/style/default";
+
+// Components
+@import "assets/style/components/buttons";
+@import "assets/style/components/inputs";
+@import "assets/style/components/headers";
+@import "assets/style/components/overlay";
+
+// Layout
+@import "assets/style/layout/navigation";
+@import "assets/style/layout/footer";
+
+// Pages
+@import "assets/style/pages/about";
+@import "assets/style/pages/gallery";
+@import "assets/style/pages/contact";
+@import "assets/style/pages/homepage";
+@import "assets/style/pages/information";
+@import "assets/style/pages/calendar";
+

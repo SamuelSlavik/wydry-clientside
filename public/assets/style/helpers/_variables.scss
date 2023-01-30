@@ -1,0 +1,37 @@
+// BASE COLOR SCHEME
+$white: #F1F1F1;
+$blue: #161669;
+$red: #FF2E17;
+
+// OTHER COLORs
+$white2: #F1F1F1;
+$white3: #d5dadd;
+$grey: grey;
+$blue2: #030330;
+$blue3: #8787f7;
+$blue4: #131339;
+$dark-blue: #0C0F1F;
+$red2: #ff9999;
+$red3: #a50d0d;
+$red4: rgba(255, 0, 0, 0.3);
+
+// BREAK-POINTS
+$break-1: 768px;
+$break-2: 1170px;
+$break-3: 1600px;
+
+// FONTS
+// used font is ubuntu through google fonts link
+$primaryFontSize: 1em;
+$secondaryFontSize: 1.1em;
+$tertiaryFontSize: 1.2em;
+$smallFontSize: 0.9em;
+$smallerFontSize: 0.8em;
+$bigFontSize: 1.4em;
+
+// MARGINS
+.--margin-bottom {
+  margin-bottom: 25px;
+}
+
+// PADDINGSS
