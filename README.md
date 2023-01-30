@@ -1,4 +1,4 @@
 # Wydry - frontend
 
-#stack
+# Stack
 ReactJS, Typescript, SCSS 
